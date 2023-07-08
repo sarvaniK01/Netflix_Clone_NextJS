@@ -1,7 +1,7 @@
 
 export default function greyDivider() {
     return(
-        <div className="bg-[#48494B] w-full h-3">
+        <div className="bg-black/90 w-full h-2">
             
         </div>
     )

@@ -9,7 +9,10 @@ module.exports = {
         'white':'#FFFF',
         'blue':'#0068DC',
         'grey':'#48494B',
-      }
+      },
+      fontFamily: {
+        nunito: ['Nunito Sans', 'sans-serif'],
+      },
     },
   },
   plugins: [],

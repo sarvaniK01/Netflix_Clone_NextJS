@@ -9,21 +9,21 @@ const Accordion = ({title, description}) => {
     const [expanded, setExpanded] = useState(false);
     
     return(
-        <div onClick={() => setExpanded(!expanded)} className='bg-[#48494B]'>
+        <div onClick={() => setExpanded(!expanded)} className='bg-white/20 cursor-pointer'>
             {/* TITLE */}
-            <div className='flex justify-between my-auto'>
-                <h1 className="text-white my-auto px-5 font-semibold text-[1.1rem]">{title}</h1>
+            <div className={`flex justify-between my-auto hover:bg-white/30 ${expanded ? "transition-all duration-1000 ease-in-out" : ""} `}>
+                <h1 className="text-white my-auto px-6 py-7 font-semibold text-2xl">{title}</h1>
                 <div>
-                    <div className = 'px-2 text-[2rem] text-white transition-max-height ease-in-out duration-700 '>
+                    <div className = 'px-5 py-5 text-5xl text-white'>
                         {expanded ? 'x' : '+'}
                     </div>
                 </div> 
             </div>
             
             {/* DESCRIPTION */}
-            <div className={`transition-max-height ease-in-out duration-700 overflow-hidden ${expanded ? "max-h-100" : "max-h-0" }`}>
+            <div className={`overflow-hidden transition-all duration-1000 ease-in-out ${expanded ? "max-h-100 " : "max-h-0 " }`}>
                 <div className='bg-black w-full h-0.5'></div>
-                <p className='font-semibold text-white px-5 py-2'>
+                <p className='text-white text-2xl px-7 py-7 '>
                     {description}
                 </p>
             </div>

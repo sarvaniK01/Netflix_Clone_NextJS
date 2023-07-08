@@ -1,19 +1,67 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@200;300;400;500;600;700;800;900;1000&display=swap');
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
-/* html,
-body {
-  padding: 0;
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
-    Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+
+
+.container{
+  height: 100%;
+  width: 100%;
 }
 
-a {
-  color: inherit;
-  text-decoration: none;
+.div1{
+  background-image: linear-gradient(rgba(0, 0, 0, 0.94),rgba(0, 0, 0, 0.2))  ,url('../public/main_bg.jpg');
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding: 1.2rem;
+  height: 100%;
 }
 
-* {
-  box-sizing: border-box;
-} */
+
+.mainLogo{
+  width: 10rem;
+}
+
+.videoContainer{
+  position: absolute;
+  left: 48.5%;
+  max-height: 54%;
+  max-width: 71%;
+  width: 72.5%;
+  height: 100%;
+  top: 44.5%;
+  transform: translate(-50%,-50%);
+  object-position: center;
+}
+
+.videoContainer2{
+  position: absolute;
+  left: 48%;
+  max-height: 54%;
+  max-width: 71%;
+  width: 64%;
+  height: 100%;
+  top: 44.5%;
+  transform: translate(-50%,-50%);
+  object-position: center;
+}
+
+.div4Img{
+  position: relative;
+  z-index: 3;
+}
+
+@media (min-width: 700px){
+  .videoContainer{
+    max-width: 75%;
+    transform: translate(-49%,-48.7%);
+  }
+}
+
+@media (min-width: 710px){
+  .videoContainer{
+    max-width: 75%;
+  }
+}

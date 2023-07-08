@@ -8,37 +8,37 @@ import { faChevronRight } from '@fortawesome/free-solid-svg-icons';
 
 export default function Div1() {
     return(
-        <div>
-            <section className={styles.div1}>
+        <div className='h-[40rem] font-nunito'>
+            <section className="div1 ">
                 {/* HEADER */}
                 <div className='flex justify-between'>
-                    <img src='/netflix_logo.png' alt='netflix_logo' className={styles.mainLogo}/>
+                    <img src='/netflix_logo.png' alt='netflix-logo' className="w-[10.5rem] pl-3"/>
 
-                    <div className='flex'>
-                        <button className='flex text-white my-auto mx-2 border-white border-[1px] border-opacity-70 px-1 py-1 rounded-sm'>
+                    <div className='flex gap-x-5'>
+                        <button className='flex text-white gap-x-2 my-auto mx-2 border border-white/40 px-2 py-1 rounded-md'>
                             <FontAwesomeIcon icon={faGlobe} className='my-auto'></FontAwesomeIcon>
-                            <p className='text-sm px-1'>English</p>
+                            <p className='text-md px-1 font-semibold my-auto'>English</p>
                             <FontAwesomeIcon icon={faCaretDown} className='my-auto'></FontAwesomeIcon>
                         </button>
 
-                        <button className='text-white my-auto mx-auto bg-[#E50914] rounded-sm px-1.5 py-1.5 mr-2'>
-                            <p className='my-auto py-auto text-sm font-semibold'>Sign In</p>
+                        <button className='text-white my-auto mx-auto bg-[#E50914] rounded-md px-4 py-1.5 mr-2'>
+                            <p className='my-auto py-auto text-sm font-bold'>Sign In</p>
                         </button>
                     </div>
                 </div>
 
                 {/* CONTENT */}
-                <div className='mt-12'>
-                    <p className='font-bold text-white text-[1.7rem] text-center'>Unlimited movies, TV shows and more.</p>
-                    <p className='text-white text-center my-3 text-[1.2rem]'>Watch anywhere. Cancel anytime.</p>
-                    <p className='text-white text-center my-3 mx-3 text-[1.1rem]'>Ready to watch? Enter your email to create or restart your membership.</p>
+                <div className='mt-[23%]'>
+                    <p className='font-black text-white text-5xl text-center'>Unlimited movies, TV shows and more.</p>
+                    <p className='text-white text-center mt-5 font-semibold text-2xl'>Watch anywhere. Cancel anytime.</p>
+                    <p className='text-white text-center mt-5 mx-3 text-xl'>Ready to watch? Enter your email to create or restart your membership.</p>
 
-                    <div>
-                        <div className=''>
-                            <input type='text' placeholder='Email address' className='w-full py-2.5 pl-2 rounded-sm text-grey'/>
+                    <div className='flex gap-x-2 mx-auto justify-center'>
+                        <div className='mt-auto w-[36%]'>
+                            <input type='text' placeholder='Email address' className=' py-4 pl-4 rounded-sm text-white font-semibold bg-black/40 w-[100%] border border-white/40'/>
                         </div>
-                        <button className='flex justify-between text-white my-auto mx-auto bg-[#E50914] rounded-sm mt-4 px-2 py-2'>
-                            <p className='my-auto text-md px-1 font-semibold'>Get Started</p>
+                        <button className='flex text-white bg-[#E50914] rounded-sm mt-4 px-5 py-3 hover:bg-[#E50914]/80 hover:linear hover:duration-200'>
+                            <p className=' text-2xl font-bold'>Get Started</p>
                             <FontAwesomeIcon icon={faChevronRight} className='my-auto px-1 text-sm font-light'/>
                         </button>
                     </div>
