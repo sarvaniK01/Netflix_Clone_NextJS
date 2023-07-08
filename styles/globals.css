@@ -11,7 +11,7 @@
 }
 
 .div1{
-  background-image: linear-gradient(rgba(0, 0, 0, 0.94),rgba(0, 0, 0, 0.2))  ,url('../public/main_bg.jpg');
+  background-image: linear-gradient(rgba(0, 0, 0, 0.94),rgba(0, 0, 0, 0.2))  ,url('../public//main-bg.jpg');
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
