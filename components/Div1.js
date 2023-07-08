@@ -9,7 +9,7 @@ import { faChevronRight } from '@fortawesome/free-solid-svg-icons';
 export default function Div1() {
     return(
         <div className='h-[40rem] font-nunito'>
-            <section className="div1 ">
+            <section className="bg-hero bg-center bg-no-repeat bg-cover h-full div1 p-[1.2rem]">
                 {/* HEADER */}
                 <div className='flex justify-between'>
                     <img src='/netflix_logo.png' alt='netflix-logo' className="w-[10.5rem] pl-3"/>

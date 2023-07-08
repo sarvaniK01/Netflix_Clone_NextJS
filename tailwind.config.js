@@ -13,6 +13,9 @@ module.exports = {
       fontFamily: {
         nunito: ['Nunito Sans', 'sans-serif'],
       },
+      backgroundImage: {
+        'hero': "url('/main-bg.jpg')",
+      }
     },
   },
   plugins: [],
