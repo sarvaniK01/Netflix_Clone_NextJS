@@ -36,6 +36,12 @@
   object-position: center;
 }
 
+.videoContainer1{
+  position: absolute;
+  left: 14%;
+  bottom:-210%;
+}
+
 .videoContainer2{
   position: absolute;
   left: 48%;
@@ -53,10 +59,35 @@
   z-index: 3;
 }
 
-@media (min-width: 700px){
+@media (min-width: 375px){
   .videoContainer{
     max-width: 75%;
-    transform: translate(-49%,-48.7%);
+    transform: translate(-50%,-50%);
+    top: 45%;
+    left: 49.5%;
+  }
+
+  .videoContainer1{
+    left: 13%;
+    bottom:-320%;
+  }
+
+  .videoContainer2{
+    max-width: 75%;
+    transform: translate(-50%,-50%);
+    top: 48%;
+    left: 49.5%;
+  }
+}
+
+@media (min-width: 425px){
+  .videoContainer{
+    max-width: 75%;
+  }
+
+  .videoContainer1{
+    left: 16%;
+    bottom:-325%;
   }
 }
 

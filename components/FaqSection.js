@@ -5,10 +5,10 @@ import { faChevronRight } from '@fortawesome/free-solid-svg-icons';
 export default function FaqSection(){
     return(
         <section className="bg-black py-10 font-nunito">
-            <h1 className="px-5 text-center font-black text-white text-5xl">Frequently Asked Questions</h1>
+            <h1 className="px-5 text-center font-black text-white text-3xl lg:text-5xl">Frequently Asked Questions</h1>
 
             {/* FAQ Div */}
-            <div className="mx-14 my-10">
+            <div className="mx-7 lg:mx-14 my-10">
                 <Accordion 
                     title='What is Netflix?' 
                     description="Netflix is a streaming service that offers a wide variety of award-winning TV shows, movies, anime, documentaries and more – on thousands of internet-connected devices.
@@ -50,14 +50,14 @@ export default function FaqSection(){
             
 
             <div className='mt-12'>
-                <p className='text-white text-center my-3 mx-3 text-xl font-semibold'>Ready to watch? Enter your email to create or restart your membership.</p>
+                <p className='text-white text-center my-3 mx-3 text-md lg:text-xl font-semibold'>Ready to watch? Enter your email to create or restart your membership.</p>
 
-                <div className='flex gap-x-2 mx-auto justify-center'>
-                    <div className='mt-auto w-[36%]'>
+                <div className='flex flex-col lg:flex-row gap-x-2 mx-auto justify-center'>
+                    <div className='mt-auto w-[70%] mx-auto lg:mx-0 lg:w-[36%]'>
                         <input type='text' placeholder='Email address' className=' py-4 pl-4 rounded-sm text-white font-semibold bg-[#1c2432] w-[100%] border border-[#25915e]'/>
                     </div>
-                    <button className='flex text-white bg-[#E50914] rounded-sm mt-4 px-5 py-3 hover:bg-[#E50914]/80 hover:linear hover:duration-200'>
-                        <p className=' text-2xl font-bold'>Get Started</p>
+                    <button className='flex text-white bg-[#E50914] rounded-sm mx-auto lg:mx-0 mt-4 px-5 py-3 hover:bg-[#E50914]/80 hover:linear hover:duration-200'>
+                        <p className='text-lg lg:text-2xl font-bold'>Get Started</p>
                         <FontAwesomeIcon icon={faChevronRight} className='my-auto px-1 text-sm font-light'/>
                     </button>
                 </div>
