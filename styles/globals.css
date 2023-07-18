@@ -91,8 +91,49 @@
   }
 }
 
-@media (min-width: 710px){
+@media (min-width: 768px){
   .videoContainer{
     max-width: 75%;
+    top: 46%;
+  }
+
+  .videoContainer1{
+    left: 30%;
+    bottom:-390%;
+  }
+
+  .videoContainer2{
+    max-width: 75%;
+    transform: translate(-50%,-50%);
+    top: 48%;
+    left: 49.5%;
+  }
+}
+
+@media (min-width: 1024px){
+  .videoContainer1{
+    left: 14%;
+    bottom:-285%;
+  }
+}
+
+@media (min-width: 1155px){
+  .videoContainer1{
+    left: 14%;
+    bottom:-210%;
+  }
+}
+
+@media (min-width: 1440px){
+  .videoContainer1{
+    left: 14%;
+    bottom:-208%;
+  }
+}
+
+@media (min-width: 2560px){
+  .videoContainer1{
+    left: 29%;
+    bottom:-70%;
   }
 }

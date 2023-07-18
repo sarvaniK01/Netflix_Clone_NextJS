@@ -4,9 +4,9 @@ import { faGlobe } from "@fortawesome/free-solid-svg-icons";
 
 const Footer  = () => {
     return(
-        <section className="text-white/70 bg-black px-10 py-20 font-nunito">
+        <section className="text-white/70 bg-black px-10 py-20 font-nunito xl:px-[10%] 2xl:px-[20%]">
             <h1 className="text-md">Questions? Call <span className="underline">000-800-040-1843</span></h1>
-            <div className="grid grid-cols-1 md:grid-cols-3 py-5 underline gap-y-3 text-md">
+            <div className="grid grid-cols-1 md:grid-cols-3 lg:grid-cols-2 xl:grid-cols-3 2xl:grid-cols-4 py-5 underline gap-y-3 text-md">
                 <p className="   cursor-pointer">FAQ</p>
                 <p className="       cursor-pointer">Help Centre</p>
                 <p className="     cursor-pointer">Account</p>
